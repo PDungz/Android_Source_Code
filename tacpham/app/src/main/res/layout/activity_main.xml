@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:text="QUẢN LÝ TÁC PHẨM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <!-- Mã máy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewMaTacPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã máy:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextMaTacPham"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:hint="Nhập maTP..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Tên máy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTenTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tenTP:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTenTacPham"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="tenTP..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Loại máy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewNhaXB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NhaXB:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTacGia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nhập NhaXB..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Hãng sản xuất -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSoXB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SoXB:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNamXuatBan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nhập SoXB..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Số lượng máy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewsoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng :"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextSoLuong"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Đơn giá -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewdonGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextdonGia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Đơn giá..."
+            android:minWidth="100dp"
+            android:minHeight="48dp" />
+
+
+    </LinearLayout>
+
+    <!-- Button Thêm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonThem"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="THÊM" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListTacPham"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

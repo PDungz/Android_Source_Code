@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:text="SỬA THÔNG TIN TÁC PHẨM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <!-- Mã tác phẩm -->
+    <TextView
+        android:id="@+id/textViewMaTacPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã tác phẩm"
+        android:textSize="16sp" />
+
+    <!-- Tên tác phẩm -->
+    <EditText
+        android:id="@+id/editTextTenTacPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên tác phẩm"
+        android:minWidth="100dp"
+        android:minHeight="48dp"/>
+
+    <!-- Tác giả -->
+    <EditText
+        android:id="@+id/editTextTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tác giả"
+        android:minWidth="100dp"
+        android:minHeight="48dp"/>
+
+    <!-- Năm xuất bản -->
+    <EditText
+        android:id="@+id/editTextNamXuatBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm xuất bản"
+        android:minWidth="100dp"
+        android:minHeight="48dp"/>
+
+    <!-- Số lượng -->
+    <EditText
+        android:id="@+id/editTextSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:minWidth="100dp"
+        android:minHeight="48dp"/>
+    <EditText
+        android:id="@+id/editTextdonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:minWidth="100dp"
+        android:minHeight="48dp"/>
+
+</LinearLayout>
